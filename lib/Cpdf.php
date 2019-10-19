@@ -1427,6 +1427,9 @@ EOT;
                 $res .= ">>\nendobj";
 
                 return $res;
+            default: 
+                $this->objects[$id]['info'][$action] = $options;
+                break;
         }
 
         return null;
